@@ -1,33 +1,58 @@
+# 🌱 Soil Crop Predictor
 
-# 🌱 Sowing Success: Crop Prediction from Soil Metrics Using Logistic Regression
+A machine learning-based web application that predicts the most suitable crop for cultivation based on soil features using a regression model.
 
-This project applies a logistic regression model to predict the most suitable crop based on soil health indicators. The dataset includes soil nutrient levels (N, P, K) and pH, with the goal of recommending an optimal crop for farmers.
-
-## 📁 Dataset
-- **File:** `soil_measures.csv`
-- **Columns:**
-  - `N`: Nitrogen content
-  - `P`: Phosphorous content
-  - `K`: Potassium content
-  - `ph`: pH level of soil
-  - `crop`: Optimal crop (target variable)
-
-## ⚙️ Techniques Used
-- Data cleaning and preprocessing
-- Train-test splitting
-- Logistic Regression (multi-class classification)
-- Accuracy evaluation and performance metrics
-- Feature importance inspection
-
-## 📊 Model Summary
-A logistic regression classifier was trained to predict crop type from numeric soil properties. The model performs well in identifying the appropriate crop based on these parameters.
-
-## 🧪 Future Work
-- Try tree-based models (Random Forest, XGBoost)
-- Add soil moisture and temperature features
-- Deploy as a Streamlit app for real-time crop suggestions
-
-## 🙏 Acknowledgement
-Special thanks to **SPCAI-PAFIAST** for providing access to this DataCamp learning opportunity.
+Built with Python, Scikit-learn, and Streamlit, this project demonstrates how regression models can guide agricultural decisions using real-world soil data.
 
 ---
+
+## 🚀 Features
+
+- 🌾 Predicts optimal crop from soil data (N, P, K, pH, temperature, etc.)
+- 🧠 Trained using **Random Forest Regression**
+- 🎛️ Frontend built with **Streamlit** for instant interaction
+- 📦 Includes serialized model and label encoder
+- 🧪 Notebook for EDA, preprocessing, and model training
+
+---
+
+## 📁 Project Structure
+
+| File/Folder                      | Description                                       |
+|----------------------------------|---------------------------------------------------|
+| `app.py`                         | Streamlit web app script                          |
+| `soil_crop_prediction.ipynb`     | Jupyter notebook for data processing and modeling |
+| `random_forest_crop_regression.pkl` | Trained regression model                      |
+| `label_encoder.pkl`             | Label encoder to decode crop predictions          |
+| `soil_measures_separated_large.csv` | Input dataset                                  |
+| `requirements.txt`              | Python dependencies                               |
+| `.ipynb_checkpoints/`           | [Ignored] Jupyter autosave files                  |
+
+---
+
+## 📊 Input Features
+
+- **Nitrogen (N)**
+- **Phosphorus (P)**
+- **Potassium (K)**
+- **Temperature**
+- **Humidity**
+- **pH**
+- **Rainfall**
+
+---
+
+## 🧪 Model Used
+
+- Random Forest Regression
+- MAE, MSE, R² metrics used for evaluation
+- LabelEncoder used to convert regression outputs to crop names
+
+---
+
+## ⚙️ Installation & Usage
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/ahmedjawad24/soil_crop_predictor.git
+   cd soil_crop_predictor
