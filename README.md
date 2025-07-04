@@ -22,11 +22,9 @@ Built with Python, Scikit-learn, and Streamlit, this project demonstrates how re
 |----------------------------------|---------------------------------------------------|
 | `app.py`                         | Streamlit web app script                          |
 | `soil_crop_prediction.ipynb`     | Jupyter notebook for data processing and modeling |
-| `random_forest_crop_regression.pkl` | Trained regression model                      |
-| `label_encoder.pkl`             | Label encoder to decode crop predictions          |
 | `soil_measures_separated_large.csv` | Input dataset                                  |
 | `requirements.txt`              | Python dependencies                               |
-| `.ipynb_checkpoints/`           | [Ignored] Jupyter autosave files                  |
+
 
 ---
 
