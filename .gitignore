@@ -1,0 +1,15 @@
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model and label encoder files
+*.pkl
+
+# Ignore raw datasets
+*.csv
+
+# Ignore Streamlit cache and logs
+.streamlit/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
