@@ -1,3 +1,6 @@
+![assets_snapshot](https://github.com/user-attachments/assets/1c56816b-b44e-4fdf-8a09-4b66cea581a1)
+
+
 # 🌱 Soil Crop Predictor
 
 A machine learning-based web application that predicts the most suitable crop for cultivation based on soil features using a regression model.
